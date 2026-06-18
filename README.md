@@ -1,14 +1,14 @@
 # ♻️ Pfand-Hero
 A lifestyle app for tracking returned plastic cards and calculating Pfand cashback in Germany.
 
-.. Features
-.. Adding containers — 6 types: plastic, glass, cans, reusable bottles, crates
-.. Calculator — instant calculation of the amount in euros
-.. CO₂ tracker — how many grams of carbon dioxide have been saved
-.. Donation history — stored in localStorage
-.. Charts (Recharts) — earnings and number of bottles by month, pie chart
-.. Export to CSV — download the entire history
-.. Map (Leaflet + OpenStreetMap) — Pfandautomaten in 5 cities: Berlin, Munich, Hamburg, Dresden, Cologne
+.. Features //
+.. Adding containers — 6 types: plastic, glass, cans, reusable bottles, crates //
+.. Calculator — instant calculation of the amount in euros //
+.. CO₂ tracker — how many grams of carbon dioxide have been saved //
+.. Donation history — stored in localStorage //
+.. Charts (Recharts) — earnings and number of bottles by month, pie chart //
+.. Export to CSV — download the entire history //
+.. Map (Leaflet + OpenStreetMap) — Pfandautomaten in 5 cities: Berlin, Munich, Hamburg, Dresden, Cologne //
 ## Quick Start
 
 ```bash
