@@ -1,35 +1,32 @@
 # ♻️ Pfand-Hero
+A lifestyle app for tracking returned plastic cards and calculating Pfand cashback in Germany.
 
-Лайфстайл-приложение для учёта сданного пластика и расчёта Pfand-кэшбека в Германии.
-
-## Функционал
-
-- **Добавление тары** — 6 типов: пластик, стекло, банки, многоразовые бутылки, ящики
-- **Калькулятор** — мгновенный расчёт суммы в евро
-- **CO₂-трекер** — сколько граммов углекислого газа спасено
-- **История сдач** — хранится в `localStorage`
-- **Графики** (Recharts) — заработок и кол-во флаконов по месяцам, pie-диаграмма
-- **Экспорт в CSV** — скачать всю историю
-- **Карта** (Leaflet + OpenStreetMap) — Pfandautomaten в 5 городах: Берлин, Мюнхен, Гамбург, Дрезден, Кёльн
-
-## Быстрый старт
+.. Features
+.. Adding containers — 6 types: plastic, glass, cans, reusable bottles, crates
+.. Calculator — instant calculation of the amount in euros
+.. CO₂ tracker — how many grams of carbon dioxide have been saved
+.. Donation history — stored in localStorage
+.. Charts (Recharts) — earnings and number of bottles by month, pie chart
+.. Export to CSV — download the entire history
+.. Map (Leaflet + OpenStreetMap) — Pfandautomaten in 5 cities: Berlin, Munich, Hamburg, Dresden, Cologne
+## Quick Start
 
 ```bash
 npm install
 npm start
 ```
 
-Приложение откроется на http://localhost:3000
+The application will open at http://localhost:3000
 
-## Сборка для production
+## Build for Production
 
 ```bash
 npm run build
 ```
 
-## Стек
+## Stack
 
-| Технология | Зачем |
+| Technologies | The purpose |
 |---|---|
 | React 18 | UI |
 | Recharts | Графики |
@@ -37,24 +34,24 @@ npm run build
 | CSS Modules | Стили компонентов |
 | localStorage | Персистентность данных |
 
-## Структура проекта
+## The Project Structure
 
 ```
 src/
-  constants.js          ← типы тары и города
-  hooks/
-    useLocalStorage.js  ← хук для localStorage
-  components/
-    BottleCard.jsx      ← карточка одного типа тары
-    AddTab.jsx          ← вкладка добавления
-    StatsTab.jsx        ← статистика и графики
-    MapTab.jsx          ← карта автоматов
-  App.js                ← корневой компонент
-  App.css               ← глобальные стили
+constants.js ← container types and cities
+hooks/
+useLocalStorage.js ← hook for localStorage
+components/
+BottleCard.jsx ← card for one container type
+AddTab.jsx ← adding tab
+StatsTab.jsx ← statistics and graphs
+MapTab.jsx ← machine map
+App.js ← root component
+App.css ← global styles
 ```
 
-## Расширение
+## Extension
 
-Чтобы добавить новый город в карту — отредактируй массив `CITIES` в `src/constants.js`.
+To add a new city to the map, edit the CITIES array `CITIES` в `src/constants.js`.
 
-Чтобы добавить новый тип тары — добавь объект в `BOTTLE_TYPES` в `src/constants.js`.
+To add a new container type, add an object to `BOTTLE_TYPES` в `src/constants.js`.
