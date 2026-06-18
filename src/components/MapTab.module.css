@@ -1,0 +1,20 @@
+.section { padding: 16px; }
+.cityRow { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.cityBtn {
+  padding: 7px 14px; border-radius: 20px; border: 2px solid #ede9fe;
+  background: #fff; font-size: 12px; font-weight: 700; color: #7c3aed;
+  cursor: pointer; font-family: inherit; transition: all 0.15s;
+}
+.cityBtn:hover { border-color: #7c3aed; }
+.cityBtn.active { background: linear-gradient(135deg,#7c3aed,#059669); color: #fff; border-color: transparent; }
+.map { height: 300px; border-radius: 14px; border: 2px solid #ede9fe; overflow: hidden; }
+.tip {
+  background: #f5f3ff; border-left: 3px solid #7c3aed;
+  padding: 10px 12px; border-radius: 0 10px 10px 0;
+  font-size: 12px; color: #6b7280; margin-top: 12px;
+}
+.list      { margin-top: 14px; display: flex; flex-direction: column; gap: 8px; }
+.listItem  { background: #fff; border: 1px solid #ede9fe; border-radius: 12px; padding: 11px 14px; display: flex; align-items: flex-start; gap: 10px; }
+.listIcon  { font-size: 18px; margin-top: 1px; }
+.listName  { font-size: 13px; font-weight: 700; color: #374151; }
+.listAddr  { font-size: 11.5px; color: #9ca3af; margin-top: 2px; }

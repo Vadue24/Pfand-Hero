@@ -1,0 +1,51 @@
+.section { padding: 16px; }
+
+.summary {
+  background: linear-gradient(135deg, #7c3aed, #4f46e5);
+  color: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.summaryTotal  { font-size: 40px; font-weight: 800; letter-spacing: -1.5px; }
+.summaryLabel  { font-size: 12px; opacity: 0.8; margin-top: 2px; }
+.summaryRight  { text-align: right; }
+.summaryCount  { font-size: 28px; font-weight: 700; }
+.ecoBadge {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: rgba(255,255,255,0.2); border-radius: 20px;
+  padding: 4px 12px; margin-top: 8px; font-size: 12px; font-weight: 600;
+}
+
+.grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-bottom: 16px; }
+
+/* Кнопки */
+.btnRow { display: flex; gap: 10px; }
+.btnSave {
+  background: linear-gradient(135deg, #7c3aed, #059669);
+  color: #fff; border: none; border-radius: 12px;
+  padding: 13px 18px; font-size: 14px; font-weight: 700; flex: 1;
+  cursor: pointer; font-family: inherit; transition: opacity 0.15s;
+}
+.btnSave:hover:not(:disabled) { opacity: 0.9; }
+.btnSave:disabled { opacity: 0.4; cursor: not-allowed; }
+.btnClear {
+  background: #fff; color: #ef4444;
+  border: 2px solid #fecaca; border-radius: 12px;
+  padding: 13px 16px; font-size: 16px; cursor: pointer; font-family: inherit;
+}
+.btnClear:hover { background: #fff5f5; }
+
+/* История */
+.historyTitle { font-size: 13px; font-weight: 700; color: #374151; margin: 20px 0 10px; }
+.historyItem {
+  background: #fff; border-radius: 12px; padding: 12px 14px; margin-bottom: 8px;
+  display: flex; justify-content: space-between; align-items: center;
+  border: 1px solid #ede9fe;
+}
+.historyDate   { font-size: 12px; color: #9ca3af; }
+.historyDetail { font-size: 12px; color: #6b7280; margin-top: 2px; }
+.historyAmount { font-weight: 700; color: #7c3aed; font-size: 15px; }

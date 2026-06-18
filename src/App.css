@@ -1,0 +1,84 @@
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #f7f3ff;
+}
+
+.header {
+  background: linear-gradient(135deg, #7c3aed 0%, #059669 100%);
+  color: #fff;
+  padding: 20px 20px 16px;
+  text-align: center;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+.header p {
+  font-size: 13px;
+  opacity: 0.85;
+  margin-top: 4px;
+}
+
+.lang-toggle {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  gap: 4px;
+}
+
+.lang-btn {
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s;
+}
+
+.lang-btn.active {
+  background: #fff;
+  color: #7c3aed;
+}
+
+.tabs {
+  display: flex;
+  background: #fff;
+  border-bottom: 2px solid #ede9fe;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.tab {
+  flex: 1;
+  padding: 12px 6px;
+  text-align: center;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #9ca3af;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.tab:hover { color: #7c3aed; }
+
+.tab--active {
+  color: #7c3aed;
+  border-bottom-color: #7c3aed;
+}

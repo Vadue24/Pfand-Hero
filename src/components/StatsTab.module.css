@@ -1,0 +1,22 @@
+.section { padding: 16px; }
+.cards   { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 16px; }
+.card    { background: #fff; border-radius: 14px; padding: 14px; border: 1px solid #ede9fe; }
+.cardLabel { font-size: 11px; color: #9ca3af; margin-bottom: 4px; font-weight: 600; text-transform: uppercase; letter-spacing: .5px; }
+.cardValue {
+  font-size: 22px; font-weight: 800;
+  background: linear-gradient(135deg, #7c3aed, #059669);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.cardSub   { font-size: 11px; color: #c4b5fd; margin-top: 2px; }
+
+.chartBox   { background: #fff; border-radius: 14px; padding: 16px; border: 1px solid #ede9fe; margin-bottom: 12px; }
+.chartTitle { font-size: 13px; font-weight: 700; color: #374151; margin-bottom: 12px; display: flex; align-items: center; gap: 6px; }
+.demoTag    { font-weight: 400; color: #d1d5db; font-size: 11px; }
+
+.exportBtn {
+  width: 100%; padding: 12px; border-radius: 12px; border: 2px solid #ede9fe;
+  background: #fff; color: #7c3aed; font-size: 14px; font-weight: 700;
+  cursor: pointer; margin-top: 4px; font-family: inherit; transition: background 0.15s;
+}
+.exportBtn:hover { background: #f5f3ff; }
+.empty { text-align: center; padding: 30px 20px; color: #c4b5fd; font-size: 14px; line-height: 1.7; }
